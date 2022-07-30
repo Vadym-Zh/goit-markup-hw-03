@@ -1,0 +1,371 @@
+:root {
+  --primary-bg-color: #ffffff;
+  --second-bg-color: #f5f4fa;
+  --primary-text-color: #757575;
+  --primary-title-color: #212121;
+  --address-text-color: rgba(255, 255, 255, 0.6);
+  --active-link-color: #2196f3;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+button {
+  cursor: pointer;
+}
+address {
+  font-style: normal;
+}
+
+img {
+  display: block;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  /* outline: 2px solid red; */
+}
+
+.list {
+  list-style: none;
+}
+.link,
+.logo {
+  text-decoration: none;
+}
+/* heder */
+header .container {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ececec;
+}
+/* logo */
+.body .logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+.body .logo-part {
+  color: #2196f3;
+}
+/* nav */
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+  column-gap: 50px;
+  margin-left: 90px;
+}
+
+.site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-title-color);
+}
+.body .link:hover,
+.body .link:focus {
+  color: var(--active-link-color);
+}
+/* contacts */
+
+.contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.contacts .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+/* .contacts .item + .item {
+  margin-left: 50px;
+} */
+
+.contacts .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: var(--primary-text-color);
+}
+
+/* hero */
+.hero {
+  padding: 200px 0;
+  background-color: #2f303a;
+}
+.hero-title {
+  margin: 0 auto 30px;
+  max-width: 696px;
+  text-align: center;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.hero .button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 32px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 0;
+  border-radius: 4px;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  background-color: var(--active-link-color);
+  color: #ffffff;
+}
+.hero .button:hover,
+.hero .button:focus {
+  background-color: #188ce8;
+}
+
+/* skills */
+
+.skills {
+  padding: 94px 0;
+}
+
+.skills .list {
+  display: flex;
+  gap: 30px;
+}
+
+.hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.skills-subtitle {
+  margin: 0 0 10px;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-title-color);
+}
+
+.skills-item {
+  max-width: calc((100% - 90px) / 4);
+}
+
+.text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* activity */
+.activity {
+  padding: 0 0 94px;
+}
+
+.activity-title {
+  text-align: center;
+  margin: 0 0 50px;
+  font-size: 36px;
+  line-height: 1.67;
+  letter-spacing: 0.03em;
+  color: var(--primary-title-color);
+}
+
+.activity .list {
+  display: flex;
+  column-gap: 30px;
+}
+
+/* teem */
+.teem {
+  padding: 94px 0;
+  background-color: var(--second-bg-color);
+}
+
+.teem .list {
+  display: flex;
+  gap: 30px;
+}
+
+.teem-info {
+  padding: 30px 15px;
+}
+
+.teem .teem-item {
+  max-width: calc((100% -60px) / 3);
+  background-color: var(--primary-bg-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.teem-title {
+  text-align: center;
+  margin: 0 0 50px;
+  font-size: 36px;
+  line-height: 1.67;
+  letter-spacing: 0.03em;
+  color: var(--primary-title-color);
+}
+.teem .teem-subtitle {
+  text-align: center;
+  margin: 0 0 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--primary-title-color);
+}
+
+.teem .profession {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+/* footer */
+.footer {
+  padding: 60px 0;
+  background-color: #2f303a;
+}
+.footer .logo {
+  display: inline-block;
+  margin: 0 0 20px;
+  color: #ffffff;
+}
+.addres .addres-ref {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.addres-item + .addres-item {
+  margin-top: 9px;
+}
+
+.addres-item {
+  height: 21px;
+}
+
+.addres .contact-ref {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--address-text-color);
+}
+
+/* ----PORTFOLIO---- */
+.portfolio {
+  padding: 94px 0;
+}
+
+.current-link {
+  color: var(--active-link-color);
+}
+
+.filter-list {
+  display: flex;
+  margin-bottom: 50px;
+  gap: 8px;
+  justify-content: center;
+}
+.portfolio-filter {
+  padding: 6px 22px;
+  border: 0;
+  border-radius: 4px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+  background-color: var(--second-bg-color);
+  color: var(--primary-title-color);
+}
+
+.portfolio-filter:hover,
+.portfolio-filter:focus {
+  background-color: var(--active-link-color);
+  color: #ffffff;
+}
+
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.gallery-info {
+  padding: 20px 24px;
+  max-width: 370px;
+  border: 1px solid #EEEEEE;
+  border-top: transparent;
+}
+
+.gallery-title {
+  margin-bottom: 4px;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--primary-title-color);
+}
+.gallery-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+/* .gallery-more {
+} додатковий текст клітинокгалереї*/
+.gallery-item abbr {
+  text-decoration: none;
+}
