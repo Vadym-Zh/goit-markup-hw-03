@@ -52,10 +52,14 @@ body {
   text-decoration: none;
 }
 /* heder */
+
+header {
+  border-bottom: 1px solid #ececec;
+}
+
 header .container {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ececec;
 }
 /* logo */
 .body .logo {
@@ -193,7 +197,7 @@ header .container {
 }
 
 .skills-item {
-  max-width: calc((100% - 90px) / 4);
+  width: calc((100% - 90px) / 4);
 }
 
 .text {
@@ -247,7 +251,7 @@ header .container {
   text-align: center;
   margin: 0 0 50px;
   font-size: 36px;
-  line-height: 1.67;
+  line-height: calc(42 / 36);
   letter-spacing: 0.03em;
   color: var(--primary-title-color);
 }
@@ -281,7 +285,7 @@ header .container {
 .addres .addres-ref {
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: #ffffff;
 }
@@ -290,15 +294,11 @@ header .container {
   margin-top: 9px;
 }
 
-.addres-item {
-  height: 21px;
-}
-
 .addres .contact-ref {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: var(--address-text-color);
 }
@@ -343,10 +343,14 @@ header .container {
   gap: 30px;
 }
 
+.gallery-item {
+  width: calc((100% - 60px) / 3);
+  /* max-width: 370px; */
+}
+
 .gallery-info {
   padding: 20px 24px;
-  max-width: 370px;
-  border: 1px solid #EEEEEE;
+  border: 1px solid #eeeeee;
   border-top: transparent;
 }
 
